@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jobsphere</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+   
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">Jobsphere</div>
+      <div class="text">
+        <ul class="menu">
+          <li class="menu-item">
+            <p>Jobs</p>
+            <div class="dropdown hello">
+              <div class="dropdown-column">
+                <h4>Popular Categories I</h4>
+                <a href="#" data-title="software-dev">Software Development</a>
+                <a href="#" data-title="sales">Sales</a>
+                <a href="#" data-title="marketing">Marketing</a>
+                <a href="#" data-title="data">Data</a>
+                <a href="#" data-title="hr">Human Resources</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>Popular Categories II</h4>
+                <a href="#" data-title="devops">DevOps / SysAdmin</a>
+                <a href="#" data-title="design">Design</a>
+                <a href="#" data-title="product">Product</a>
+                <a href="#" data-title="qa">QA</a>
+                <a href="#" data-title="customer-support">Customer Support</a>
+                            </div> 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="text">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <p>Companies</p>
+                        <div class="dropdown">
+                            <div class="dropdown-column">
+                                <h4>Explore Categories</h4>
+                                <a href="#">Unicorn</a>
+                                <a href="#">MNC</a>
+                                <a href="#">Startup</a>
+                                <a href="#">Product based</a>
+                                <a href="#">Internet</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Explore collections</h4>
+                                <a href="#">Top companies</a>
+                                <a href="#">IT companies</a>
+                                <a href="#">Fintech companies</a>
+                                <a href="#">Sponsored companies</a>
+                                <a href="#">Featured companies</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+                <div class="text">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <p>Services</p>
+                              <div class="dropdown">
+                                <div class="dropdown-column">
+                                  <h4>Resume writing</h4>
+                                  <a href="#">Text resume</a>
+                                  <a href="#">Visual resume</a>
+                                  <a href="#">Resume critique</a>
+                                  
+                                </div>
+                                <div class="dropdown-column">
+                                  <h4>Get recruiter's attention</h4>
+                                  <a href="#">Resume display</a>
+                                  <h4>Monthly subscription</h4>
+                                  <a href="#">Basic and premium plans</a>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>  
+
+                </div>
+                <div class="text" style="display: flex;">
+                    <p>More</p>
+                    
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <p><i class="ri-arrow-drop-down-line"></i></p>
+                              <div class="dropdown">
+                                <div class="dropdown-column">
+                                  <h4>Free resume resources</h4>
+                                  <a href="https://resume.io/app/create-resume/templates" target="_blank" rel="noopener noreferrer" >Resume maker</a>
+                                  <a href="https://www.naukri.com/resume-score-checker" target="_blank" rel="noopener noreferrer" >Resume quality score</a>
+                                  <a href="https://resume.io/app/create-resume/templates target="_blank" rel="noopener noreferrer" ">Resume samples</a>
+                                  <a href="#">Job letters samples</a>
+                                  
+                                </div>
+                                
+                            </li>
+                          </ul>  
+                </div>
+                <div id="contact">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <p>Connect</p>
+                              <div class="dropdown">
+                                <div class="dropdown-colum">
+                                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" > <i class="ri-facebook-box-fill"></i> </a>
+                                  <a href="https://linkdin.com" target="_blank" rel="noopener noreferrer" ><i class="ri-linkedin-box-fill"></i></a>
+                                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" ><i class="ri-instagram-fill"></i></a>
+                                  
+                                </div>
+                              </div>
+                            </li>
+                          </ul>   
+
+                </div>
+                
+                <div id="login">
+                    <i class="ri-user-3-fill"></i>
+                    <a href="login.html">Login</a>
+                </div>
+                <div id="register">
+                <a href="registration.html">Register</a></div>
+                <div id="logout" style="display: none;">
+  <button onclick="logoutUser()">Logout</button>
+</div>
+
+            </div>
+            <div id="fakeheader"></div>
+            <div id="page1">
+                <div id="strip">
+                    <p>Act Fast! Jobs with Approaching Deadlines are just a Click Away - 
+                    <a href="#applynow"><b> Apply Here!</b></a></p>
+                </div>
+                <div id="content">
+                    <div id="box1">
+                        <h1>Your job search ends here </h1>
+                        <p>Discover a lot of career opportunities.</p>
+                        <div id="btns">
+                            
+                           <!-- Job Category Dropdown -->
+<select id="job-title-input" class="name">
+    <option value="">Select Job Category</option>
+    <option value="software-dev">Software Development</option>
+    <option value="customer-support">Customer Service</option>
+    <option value="design">Design</option>
+    <option value="marketing">Marketing</option>
+    <option value="sales-business">Sales / Business</option>
+    <option value="product">Product</option>
+    <option value="project-management">Project Management</option>
+    <option value="data">Data Analysis</option>
+    <option value="devops">DevOps / Sysadmin</option>
+    <option value="finance-legal">Finance / Legal</option>
+    <option value="hr">Human Resources</option>
+    <option value="qa">QA</option>
+    <option value="writing">Writing</option>
+    <option value="all-others">All Others</option>
+</select>
+
+<!-- Location Dropdown -->
+<!-- <select id="location-input" class="name">
+  <option value="">Select location</option>
+  <option value="">Select Location</option>
+  <option value="Worldwide">Worldwide</option>
+  <option value="USA">USA</option>
+  <option value="Europe">Europe</option>
+  <option value="India">India</option>
+  <option value="Canada">Canada</option>
+  <option value="Asia">Asia</option>
+</select> -->
+
+  
+
+<!-- </select> -->
+
+
+<!-- Submit Button -->
+<div id="btn" onclick="handleSearchInputs()">Submit</div>
+
+                        </div>
+                    </div>
+
+                    <div id="box2">
+                        
+                        <img src="https://plus.unsplash.com/premium_photo-1661772776448-8a70da4971ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D">
+                        
+                    </div>
+                </div>
+                <div id="heading">
+                    <p><b>"Navigate your way to success with our job listings!".</b></p>
+                </div>
+            </div>
+            <div id="page2">
+                 <br><h1 style="text-align: center;">Job listings</h1> <br><br>
+                              
+                <div id="job-listings">
+                     <p>Please Select Something</p>
+                </div>
+            </div>  
+                 
+    </div> 
+    <script src="auth.js"></script>
+</body>
+</html>
